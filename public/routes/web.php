@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/contato/{id?}', function($id = "Não definido") {
-    return "Contato id= $id";
+// Route::get('/contato/{id?}', function($id = "Não definido") {
+//     return "Contato id= $id";
+// });
+
+Route::post('/contato', function() {
+    return "Contato POST";
 });
