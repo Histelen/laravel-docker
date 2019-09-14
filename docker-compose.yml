@@ -10,7 +10,7 @@ services:
     volumes:
       - ./public:/var/www/myapp
     links:
-      - mysql:vigiles-db
+      - mysql:laravel-db
     env_file: .docker.env
   mysql:
     image: mysql:5.7
